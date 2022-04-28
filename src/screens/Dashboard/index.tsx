@@ -1,9 +1,19 @@
 import React from "react"
-import { Container, Title } from './style' 
+import { Header, Container, UserInfo, Photo, User, UserGreeting, UserName, UserWrapper } from './style'
 export const Dashboard = () => {
   return (
   <Container>
-    <Title>This is my dashboard</Title>  
+    <Header>
+      <UserWrapper>
+        <UserInfo>
+          <Photo source={{uri: 'https://github.com/aq-simei.png'}} />
+          <User>
+            <UserGreeting>Olá,</UserGreeting>
+            <UserName>Antônio</UserName>
+          </User>
+        </UserInfo>
+      </UserWrapper>
+    </Header>  
   </Container>
   )
 } 
