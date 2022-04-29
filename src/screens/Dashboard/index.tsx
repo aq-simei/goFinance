@@ -1,5 +1,6 @@
 import React from "react"
-import { Header, Container, UserInfo, Photo, User, UserGreeting, UserName, UserWrapper } from './style'
+
+import { Header, Container, UserInfo, Photo, User, UserGreeting, UserName, UserWrapper, LogoutIcon } from './style'
 export const Dashboard = () => {
   return (
   <Container>
@@ -12,6 +13,7 @@ export const Dashboard = () => {
             <UserName>Antônio</UserName>
           </User>
         </UserInfo>
+            <LogoutIcon name='power'/>
       </UserWrapper>
     </Header>  
   </Container>
